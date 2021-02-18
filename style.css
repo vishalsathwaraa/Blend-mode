@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+      body,
+      h1 {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      html {
+        transition: .5s ease-in;
+      }
+
+      .banner {
+        position: absolute; 
+        width: 100%;
+       height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        transition: .4s ease-in;
+        align-items: center;
+      }
+
+      .banner video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .4s ease-in;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+
+      .banner h1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        height: 100%;
+        letter-spacing: 5px;
+        font-size: 8vw;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: transparent;
+        color: #fff;
+        transition: .5s ease-in;
+        line-height: 100vh;
+        /*          mix-blend-mode: multiply;*/
+      }
+
+
+      .list {
+        position: absolute;
+        bottom: 18px;
+        left: 0; 
+          z-index: 1;
+
+
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        margin: 0px auto;
+      }
+
+      .list li {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .4s ease-in;
+        margin: 10px;
+      }
+
+      .pp {
+        color: white;
+        display: flex;
+        font-size: 36px;
+        position: absolute;
+        z-index: 1;
+        bottom: 18px;
+        right: 30px;
+      }
+
+      .pp::before{
+        content:'\f144';
+        font-family: 'FontAwesome';
+      }
+
+      .pause::before{
+        content:'\f28b';
+        font-family: 'FontAwesome';
+      }
+/* 
+      @font-face {
+        font-family: Asian Ninja;
+        src: url('american_signs/American\ Signs.otf');
+      }
+      
+
+    h1{
+      font-family: Asian Ninja;
+    } */
+
+    @media(max-width:991px)
+    {
+      .list li { 
+
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .4s ease-in;
+        margin:8px;
+
+      }
+       
+      .pp{
+
+        font-size: 30px;
+      }
+     
+
+    }
